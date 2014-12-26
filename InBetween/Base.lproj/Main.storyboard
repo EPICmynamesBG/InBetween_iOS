@@ -171,7 +171,7 @@
                                         <rect key="frame" x="-2" y="36" width="164" height="31"/>
                                         <color key="tintColor" red="0.97619183563576939" green="0.8008453338774838" blue="0.10904643197685947" alpha="1" colorSpace="calibratedRGB"/>
                                     </slider>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ofQ-Vf-pAH" userLabel="Bet Amount Text">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ofQ-Vf-pAH" userLabel="Bet Amount Text">
                                         <rect key="frame" x="119" y="-1" width="41" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -206,12 +206,12 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_ace_of_diamonds" translatesAutoresizingMaskIntoConstraints="NO" id="RkM-7U-QbY" userLabel="Player Flipped Card">
                                         <rect key="frame" x="51" y="15" width="69" height="100"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Player" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8x2-q8-SdJ" userLabel="Player Text">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Player" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8x2-q8-SdJ" userLabel="Player Text">
                                         <rect key="frame" x="0.0" y="0.0" width="59" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fzs-pU-tnQ" userLabel="Player Money Text">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fzs-pU-tnQ" userLabel="Player Money Text">
                                         <rect key="frame" x="133" y="0.0" width="37" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -233,7 +233,7 @@
                                     <constraint firstAttribute="trailing" secondItem="Fzs-pU-tnQ" secondAttribute="trailing" id="vwD-tS-WxN"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTt-Hu-tJh" userLabel="AI 1">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kTt-Hu-tJh" userLabel="AI 1">
                                 <rect key="frame" x="52" y="475" width="170" height="125"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_ace_of_clubs" translatesAutoresizingMaskIntoConstraints="NO" id="yqU-ji-WKe" userLabel="AI 1 Card 1">
@@ -242,15 +242,15 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_ace_of_clubs" translatesAutoresizingMaskIntoConstraints="NO" id="jl5-VP-a2y" userLabel="AI 1 Card 2">
                                         <rect key="frame" x="101" y="25" width="69" height="100"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_ace_of_diamonds" translatesAutoresizingMaskIntoConstraints="NO" id="6kb-sZ-STi" userLabel="AI 1 Flipped Card">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="card_ace_of_diamonds" translatesAutoresizingMaskIntoConstraints="NO" id="6kb-sZ-STi" userLabel="AI 1 Flipped Card">
                                         <rect key="frame" x="51" y="15" width="69" height="100"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AI 1" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5dP-cK-e6n" userLabel="AI 1 Text">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AI 1" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5dP-cK-e6n" userLabel="AI 1 Text">
                                         <rect key="frame" x="0.0" y="0.0" width="39" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7fR-Xg-mw4" userLabel="AI 1 Money Text">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7fR-Xg-mw4" userLabel="AI 1 Money Text">
                                         <rect key="frame" x="133" y="0.0" width="37" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -282,12 +282,12 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_ace_of_diamonds" translatesAutoresizingMaskIntoConstraints="NO" id="KNG-uU-UYl" userLabel="AI 2 Flipped Card">
                                         <rect key="frame" x="51" y="15" width="69" height="100"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AI 2" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIi-OL-l6D" userLabel="AI 2 Text">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AI 2" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIi-OL-l6D" userLabel="AI 2 Text">
                                         <rect key="frame" x="0.0" y="0.0" width="39" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vGO-4y-83r" userLabel="AI 2 Money Text">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vGO-4y-83r" userLabel="AI 2 Money Text">
                                         <rect key="frame" x="133" y="0.0" width="37" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -319,12 +319,12 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_ace_of_diamonds" translatesAutoresizingMaskIntoConstraints="NO" id="HC0-ML-Svb" userLabel="AI 3 Flipped Card">
                                         <rect key="frame" x="51" y="15" width="69" height="100"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AI 3" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Am-hh-6sx" userLabel="AI 3 Text">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AI 3" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Am-hh-6sx" userLabel="AI 3 Text">
                                         <rect key="frame" x="0.0" y="0.0" width="39" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d5w-6E-U0F" userLabel="AI 3 Money Text">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d5w-6E-U0F" userLabel="AI 3 Money Text">
                                         <rect key="frame" x="133" y="0.0" width="37" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -345,7 +345,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LwX-2f-qX7" userLabel="AI 4">
-                                <rect key="frame" x="326" y="0.0" width="170" height="125"/>
+                                <rect key="frame" x="314" y="0.0" width="170" height="125"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_ace_of_clubs" translatesAutoresizingMaskIntoConstraints="NO" id="3VY-9w-Xkx" userLabel="AI 4 Card 1">
                                         <rect key="frame" x="0.0" y="25" width="69" height="100"/>
@@ -356,12 +356,12 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_ace_of_diamonds" translatesAutoresizingMaskIntoConstraints="NO" id="ur4-iX-ZGr" userLabel="AI 4 Flipped Card">
                                         <rect key="frame" x="51" y="15" width="69" height="100"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AI 4" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R43-Ea-kqP" userLabel="AI 4 Text">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AI 4" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R43-Ea-kqP" userLabel="AI 4 Text">
                                         <rect key="frame" x="0.0" y="0.0" width="39" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nav-Hs-kyy" userLabel="AI 4 Money Text">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nav-Hs-kyy" userLabel="AI 4 Money Text">
                                         <rect key="frame" x="133" y="0.0" width="37" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -395,12 +395,12 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_ace_of_diamonds" translatesAutoresizingMaskIntoConstraints="NO" id="Yue-vX-8Br" userLabel="AI 5 Flipped Card">
                                         <rect key="frame" x="51" y="15" width="69" height="100"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AI 5" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0sk-YG-fIJ" userLabel="AI 5 Text">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AI 5" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0sk-YG-fIJ" userLabel="AI 5 Text">
                                         <rect key="frame" x="0.0" y="0.0" width="39" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C1t-lq-Cfq" userLabel="AI 5 Money Text">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C1t-lq-Cfq" userLabel="AI 5 Money Text">
                                         <rect key="frame" x="133" y="0.0" width="37" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -445,16 +445,16 @@
                             <constraint firstItem="X8i-fX-ovk" firstAttribute="top" secondItem="Izp-My-XQZ" secondAttribute="bottom" id="Wie-VA-Yvl"/>
                             <constraint firstItem="ta0-Nu-61C" firstAttribute="width" secondItem="kTt-Hu-tJh" secondAttribute="width" id="apa-9H-U4a"/>
                             <constraint firstItem="1wP-PF-2gi" firstAttribute="top" secondItem="cqQ-rj-3YS" secondAttribute="bottom" id="bIb-Xa-fSf"/>
-                            <constraint firstItem="LwX-2f-qX7" firstAttribute="leading" secondItem="1wP-PF-2gi" secondAttribute="trailing" constant="60" id="ccA-5O-rxU"/>
                             <constraint firstAttribute="centerY" secondItem="eZO-qF-lyI" secondAttribute="centerY" id="dB6-iW-skh"/>
                             <constraint firstItem="Izp-My-XQZ" firstAttribute="leading" secondItem="ta0-Nu-61C" secondAttribute="trailing" constant="8" id="gGe-4d-MU7"/>
-                            <constraint firstItem="ta0-Nu-61C" firstAttribute="leading" secondItem="kTt-Hu-tJh" secondAttribute="trailing" constant="30" id="h7H-zf-htM"/>
                             <constraint firstItem="AxI-Jj-p9n" firstAttribute="top" secondItem="elC-IG-8Cg" secondAttribute="top" id="iiL-VJ-Y4R"/>
                             <constraint firstItem="LwX-2f-qX7" firstAttribute="top" secondItem="1wP-PF-2gi" secondAttribute="top" id="jDl-Yl-6Eo"/>
                             <constraint firstItem="CuV-rs-7aA" firstAttribute="leading" secondItem="elC-IG-8Cg" secondAttribute="leading" id="m0t-gP-WuG"/>
                             <constraint firstAttribute="trailing" secondItem="sxR-Qd-lRW" secondAttribute="trailing" constant="10" id="q4C-vA-5FO"/>
                             <constraint firstItem="eZO-qF-lyI" firstAttribute="height" secondItem="kTt-Hu-tJh" secondAttribute="height" id="sEM-IE-jLV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LwX-2f-qX7" secondAttribute="trailing" constant="100" id="swo-I4-HV7"/>
                             <constraint firstAttribute="trailing" secondItem="Izp-My-XQZ" secondAttribute="trailing" id="ubd-GA-lbC"/>
+                            <constraint firstItem="kTt-Hu-tJh" firstAttribute="leading" secondItem="elC-IG-8Cg" secondAttribute="leadingMargin" constant="30" id="zHc-NX-7Uh"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -481,7 +481,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green_background" translatesAutoresizingMaskIntoConstraints="NO" id="DKt-dL-1uK" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsd-nf-2lj">
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsd-nf-2lj">
                                 <rect key="frame" x="16" y="44" width="568" height="556"/>
                                 <string key="text">How to Play:
 1) Each player is dealt a hand of 2 cards.
@@ -673,7 +673,7 @@ Version: 1.0.0</string>
                             <constraint firstItem="7w0-V4-Q3W" firstAttribute="leading" secondItem="ehW-Sv-jTG" secondAttribute="leading" id="guC-Wk-aUq"/>
                             <constraint firstItem="HNw-39-GbA" firstAttribute="bottom" secondItem="9UJ-qp-c72" secondAttribute="bottom" id="i3l-fl-rnu"/>
                             <constraint firstItem="dTd-48-cbV" firstAttribute="leading" secondItem="udV-T1-NFd" secondAttribute="leading" id="nkb-Lm-CB4"/>
-                            <constraint firstItem="6bB-j6-riU" firstAttribute="leading" secondItem="CYq-dm-qU0" secondAttribute="trailing" constant="40" id="r3N-GQ-SKq">
+                            <constraint firstItem="6bB-j6-riU" firstAttribute="leading" secondItem="CYq-dm-qU0" secondAttribute="trailing" constant="30" id="r3N-GQ-SKq">
                                 <variation key="heightClass=compact" constant="100"/>
                             </constraint>
                             <constraint firstItem="CYq-dm-qU0" firstAttribute="centerY" secondItem="6bB-j6-riU" secondAttribute="centerY" id="ta5-e9-uT9"/>
@@ -752,7 +752,7 @@ Version: 1.0.0</string>
                                     <action selector="ExitButton:" destination="vyf-CJ-ju2" eventType="touchUpInside" id="9jK-x7-Nxy"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Paused" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tf8-ta-myL">
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Paused" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tf8-ta-myL">
                                 <rect key="frame" x="217" y="163" width="167" height="94"/>
                                 <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="80"/>
                                 <textInputTraits key="textInputTraits"/>
