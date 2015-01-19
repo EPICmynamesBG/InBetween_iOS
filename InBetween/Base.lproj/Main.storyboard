@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5IB-T8-jVq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C94b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5IB-T8-jVq">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -233,8 +233,8 @@
                                     <constraint firstAttribute="trailing" secondItem="Fzs-pU-tnQ" secondAttribute="trailing" id="vwD-tS-WxN"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kTt-Hu-tJh" userLabel="AI 1">
-                                <rect key="frame" x="52" y="475" width="170" height="125"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTt-Hu-tJh" userLabel="AI 1">
+                                <rect key="frame" x="46" y="475" width="170" height="125"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_ace_of_clubs" translatesAutoresizingMaskIntoConstraints="NO" id="yqU-ji-WKe" userLabel="AI 1 Card 1">
                                         <rect key="frame" x="0.0" y="25" width="69" height="100"/>
@@ -271,7 +271,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZO-qF-lyI" userLabel="AI 2">
-                                <rect key="frame" x="10" y="237" width="170" height="125"/>
+                                <rect key="frame" x="10" y="238" width="170" height="125"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_ace_of_clubs" translatesAutoresizingMaskIntoConstraints="NO" id="8yy-Bb-Fox" userLabel="AI 2 Card 1">
                                         <rect key="frame" x="0.0" y="25" width="69" height="100"/>
@@ -384,7 +384,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sxR-Qd-lRW" userLabel="AI 5">
-                                <rect key="frame" x="420" y="237" width="170" height="125"/>
+                                <rect key="frame" x="420" y="238" width="170" height="125"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_ace_of_clubs" translatesAutoresizingMaskIntoConstraints="NO" id="TLR-l6-0hu" userLabel="AI 5 Card 1">
                                         <rect key="frame" x="0.0" y="25" width="69" height="100"/>
@@ -464,7 +464,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RhC-aH-5YT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-21" y="-392"/>
+            <point key="canvasLocation" x="-53" y="-392"/>
         </scene>
         <!--Help View Controller-->
         <scene sceneID="Tot-8i-jKz">
@@ -710,7 +710,7 @@ Version: 1.0.0</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Wj-LJ-Ngf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-21" y="1141"/>
+            <point key="canvasLocation" x="421" y="1149"/>
         </scene>
         <!--Paused View Controller-->
         <scene sceneID="v5C-nM-s4r">
@@ -735,7 +735,7 @@ Version: 1.0.0</string>
                                 <state key="selected" image="resumebutton_pressed"/>
                                 <state key="highlighted" image="resumebutton_pressed"/>
                                 <connections>
-                                    <segue destination="9gA-aP-MtH" kind="show" id="I45-bh-qf2"/>
+                                    <action selector="ResumeButton:" destination="vyf-CJ-ju2" eventType="touchUpInside" id="9bz-OT-pCs"/>
                                 </connections>
                             </button>
                             <button alpha="0.49999999999999961" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i33-wu-eQX">
@@ -802,6 +802,62 @@ Version: 1.0.0</string>
             </objects>
             <point key="canvasLocation" x="-761" y="344"/>
         </scene>
+        <!--Scoreboard View Controller-->
+        <scene sceneID="wBK-s4-lPz">
+            <objects>
+                <viewController id="oTh-13-Ext" customClass="ScoreboardViewController" customModule="InBetween" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p0y-3H-YWe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xoj-jU-DVJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ULm-wv-r45">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green_background" translatesAutoresizingMaskIntoConstraints="NO" id="0oy-KX-34D" userLabel="Background">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Wins: " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUy-Lh-1NB" userLabel="Wins">
+                                <rect key="frame" x="271" y="120" width="59" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XyR-fC-RXj" userLabel="numOfWins">
+                                <rect key="frame" x="293" y="154" width="15" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Losses: " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g96-4f-Nrx" userLabel="Losses">
+                                <rect key="frame" x="261" y="217" width="78" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Iy-na-D1m" userLabel="numOfLosses">
+                                <rect key="frame" x="293" y="251" width="15" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="0oy-KX-34D" firstAttribute="leading" secondItem="ULm-wv-r45" secondAttribute="leading" id="4g2-yw-D4p"/>
+                            <constraint firstItem="Xoj-jU-DVJ" firstAttribute="top" secondItem="0oy-KX-34D" secondAttribute="bottom" id="E0H-d9-DXz"/>
+                            <constraint firstAttribute="centerX" secondItem="g96-4f-Nrx" secondAttribute="centerX" id="G03-9x-ung"/>
+                            <constraint firstItem="5Iy-na-D1m" firstAttribute="top" secondItem="g96-4f-Nrx" secondAttribute="bottom" constant="10" id="Nbv-7j-v5S"/>
+                            <constraint firstAttribute="centerX" secondItem="dUy-Lh-1NB" secondAttribute="centerX" id="Q8c-9L-NhE"/>
+                            <constraint firstItem="dUy-Lh-1NB" firstAttribute="top" secondItem="p0y-3H-YWe" secondAttribute="bottom" constant="100" id="Q8w-D0-Bao"/>
+                            <constraint firstAttribute="centerX" secondItem="5Iy-na-D1m" secondAttribute="centerX" id="YE9-uS-bFP"/>
+                            <constraint firstItem="g96-4f-Nrx" firstAttribute="top" secondItem="XyR-fC-RXj" secondAttribute="bottom" constant="40" id="aGP-AU-u0E"/>
+                            <constraint firstAttribute="centerX" secondItem="XyR-fC-RXj" secondAttribute="centerX" id="bYL-Vl-Ltv"/>
+                            <constraint firstItem="XyR-fC-RXj" firstAttribute="top" secondItem="dUy-Lh-1NB" secondAttribute="bottom" constant="10" id="w58-Qd-r44"/>
+                            <constraint firstAttribute="trailing" secondItem="0oy-KX-34D" secondAttribute="trailing" id="wsa-Bv-16d"/>
+                            <constraint firstItem="0oy-KX-34D" firstAttribute="top" secondItem="ULm-wv-r45" secondAttribute="top" id="yzn-xV-C9T"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DNM-RP-mIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-459" y="1192"/>
+        </scene>
     </scenes>
     <resources>
         <image name="card_ace_of_clubs" width="69" height="100"/>
@@ -825,8 +881,5 @@ Version: 1.0.0</string>
         <image name="settings_focused" width="358" height="120"/>
         <image name="settings_pressed" width="358" height="120"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="JYI-dM-jaG"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.27143301887427496" green="0.56334832702020199" blue="0.04268374562458347" alpha="1" colorSpace="calibratedRGB"/>
 </document>

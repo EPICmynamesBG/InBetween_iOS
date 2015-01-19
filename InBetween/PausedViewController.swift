@@ -10,6 +10,7 @@ import UIKit
 
 class PausedViewController: UIViewController {
 
+    //UIViewController InGame =
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,9 +21,12 @@ class PausedViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func ResumeButton(sender: UIButton) {
+        resumeGame()
+    }
     @IBAction func ExitButton(sender: UIButton) {
         exitPopUp()
-        InGameViewController.load();
+        //InGameViewController.load();
     }
     
     func exitPopUp() {
@@ -30,8 +34,19 @@ class PausedViewController: UIViewController {
             preferredStyle: UIAlertControllerStyle.Alert)
         
         alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.Default,
-            handler: nil))
-        //alert.presentViewController(
+            handler: { action in
+                switch action.style{
+                case .Default:
+                    println("default")
+                    self.storyboard?.instantiateInitialViewController()
+                    
+                case .Cancel:
+                    println("cancel")
+                    
+                case .Destructive:
+                    println("destructive")
+                }
+        }))
         alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.Cancel,
             handler: nil))
         
@@ -39,14 +54,10 @@ class PausedViewController: UIViewController {
     }
     
     func resumeGame(){
+        /*if (InGameViewController == nil){
+            UIViewController InGameViewController = self.storyboard.instantiateViewControllerWithIdentifier("InGameViewController")
+        }*/
         self.presentViewController(InGameViewController.self(), animated: true, completion: nil)
-        
-        
-        //self.loadView(InGameViewController.load())
-        //InGameViewController.restoreUserActivityState(nil)
-        
-        /*let storyboard = UIStoryboard(name: "Help", bundle: nil);
-        let vc = storyboard.instantiateViewControllerWithIdentifier("Help View Controller") as UIViewController;
-        self.presentViewController(vc, animated: true, completion: nil);*/
+        self.loadView()
     }
 }
