@@ -19,6 +19,10 @@
 		BC07A8191A426BE100258598 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC07A8181A426BE100258598 /* SettingsViewController.swift */; };
 		BC425F211A6CDB34005F4020 /* ScoreboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC425F201A6CDB34005F4020 /* ScoreboardViewController.swift */; };
 		BC77F30E1A47643800FB7535 /* SettingsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77F30D1A47643800FB7535 /* SettingsKey.swift */; };
+		BC7B21BD1A8B12C9003D0AD9 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B21BC1A8B12C9003D0AD9 /* Hand.swift */; };
+		BCA18DCF1A8ABAC500A294EA /* Suit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA18DCE1A8ABAC500A294EA /* Suit.swift */; };
+		BCA18DD11A8ABBE100A294EA /* RandomNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA18DD01A8ABBE100A294EA /* RandomNumberGenerator.swift */; };
+		BCA18DD31A8ABFAF00A294EA /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA18DD21A8ABFAF00A294EA /* Card.swift */; };
 		BCD51A8B1A87382B00E1C870 /* Pot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD51A8A1A87382B00E1C870 /* Pot.swift */; };
 		BCD51A8D1A87385800E1C870 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD51A8C1A87385800E1C870 /* Money.swift */; };
 /* End PBXBuildFile section */
@@ -50,6 +54,10 @@
 		BC07A8181A426BE100258598 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		BC425F201A6CDB34005F4020 /* ScoreboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreboardViewController.swift; sourceTree = "<group>"; };
 		BC77F30D1A47643800FB7535 /* SettingsKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsKey.swift; sourceTree = "<group>"; };
+		BC7B21BC1A8B12C9003D0AD9 /* Hand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hand.swift; path = InGame/Hand.swift; sourceTree = "<group>"; };
+		BCA18DCE1A8ABAC500A294EA /* Suit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Suit.swift; path = InGame/Suit.swift; sourceTree = "<group>"; };
+		BCA18DD01A8ABBE100A294EA /* RandomNumberGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RandomNumberGenerator.swift; path = InGame/RandomNumberGenerator.swift; sourceTree = "<group>"; };
+		BCA18DD21A8ABFAF00A294EA /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = InGame/Card.swift; sourceTree = "<group>"; };
 		BCD51A8A1A87382B00E1C870 /* Pot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pot.swift; path = InGame/Pot.swift; sourceTree = "<group>"; };
 		BCD51A8C1A87385800E1C870 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Money.swift; path = InGame/Money.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,8 +103,6 @@
 			children = (
 				BC07A7EA1A42578200258598 /* AppDelegate.swift */,
 				BC07A7EC1A42578200258598 /* ViewController.swift */,
-				BCD51A8C1A87385800E1C870 /* Money.swift */,
-				BCD51A8A1A87382B00E1C870 /* Pot.swift */,
 				BC07A8141A426B7800258598 /* InGameViewController.swift */,
 				BC07A8161A426BB100258598 /* HelpViewController.swift */,
 				BC425F201A6CDB34005F4020 /* ScoreboardViewController.swift */,
@@ -107,6 +113,12 @@
 				BC07A7F11A42578200258598 /* Images.xcassets */,
 				BC07A7F31A42578200258598 /* LaunchScreen.xib */,
 				BC07A7E81A42578200258598 /* Supporting Files */,
+				BCD51A8C1A87385800E1C870 /* Money.swift */,
+				BCD51A8A1A87382B00E1C870 /* Pot.swift */,
+				BCA18DD01A8ABBE100A294EA /* RandomNumberGenerator.swift */,
+				BCA18DCE1A8ABAC500A294EA /* Suit.swift */,
+				BCA18DD21A8ABFAF00A294EA /* Card.swift */,
+				BC7B21BC1A8B12C9003D0AD9 /* Hand.swift */,
 			);
 			path = InBetween;
 			sourceTree = "<group>";
@@ -236,9 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA18DCF1A8ABAC500A294EA /* Suit.swift in Sources */,
 				BC77F30E1A47643800FB7535 /* SettingsKey.swift in Sources */,
 				BC07A7ED1A42578200258598 /* ViewController.swift in Sources */,
 				BC07A8151A426B7800258598 /* InGameViewController.swift in Sources */,
+				BC7B21BD1A8B12C9003D0AD9 /* Hand.swift in Sources */,
+				BCA18DD31A8ABFAF00A294EA /* Card.swift in Sources */,
 				BCD51A8B1A87382B00E1C870 /* Pot.swift in Sources */,
 				BC07A7EB1A42578200258598 /* AppDelegate.swift in Sources */,
 				BC425F211A6CDB34005F4020 /* ScoreboardViewController.swift in Sources */,
@@ -246,6 +261,7 @@
 				BC07A8131A426ACC00258598 /* PausedViewController.swift in Sources */,
 				BC07A8171A426BB100258598 /* HelpViewController.swift in Sources */,
 				BC07A8191A426BE100258598 /* SettingsViewController.swift in Sources */,
+				BCA18DD11A8ABBE100A294EA /* RandomNumberGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
