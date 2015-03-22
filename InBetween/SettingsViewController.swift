@@ -24,7 +24,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
+        self.navigationController?.navigationBarHidden = false;
         loadSettings()
     }
     
@@ -39,11 +39,11 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         var potSize = NSUserDefaults.standardUserDefaults().stringForKey(String(SettingsKeys.potSize))
         var ante = NSUserDefaults.standardUserDefaults().stringForKey(String(SettingsKeys.ante))
         var startMoney = NSUserDefaults.standardUserDefaults().stringForKey(String(SettingsKeys.startingMoney))
-        CPU_Players!.text = num_CPU_players
+        CPU_Players!.placeholder = num_CPU_players
         HardCPUswitch!.setOn(CPUdifficulty, animated: true)
-        Pot_Size!.text = potSize
-        Default_Ante!.text = ante
-        Starting_Money!.text = startMoney
+        Pot_Size!.placeholder = potSize
+        Default_Ante!.placeholder = ante
+        Starting_Money!.placeholder = startMoney
     }
     
     @IBAction func saveClick(sender: UIButton) {

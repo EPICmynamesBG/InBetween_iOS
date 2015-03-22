@@ -22,11 +22,10 @@ class PausedViewController: UIViewController {
     }
     
     @IBAction func ResumeButton(sender: UIButton) {
-        resumeGame()
+        self.navigationController?.popViewControllerAnimated(true);
     }
     @IBAction func ExitButton(sender: UIButton) {
         exitPopUp()
-        //InGameViewController.load();
     }
     
     func exitPopUp() {
@@ -38,7 +37,7 @@ class PausedViewController: UIViewController {
                 switch action.style{
                 case .Default:
                     println("default")
-                    self.storyboard?.instantiateInitialViewController()
+                    self.navigationController?.popToRootViewControllerAnimated(true);
                     
                 case .Cancel:
                     println("cancel")
@@ -51,13 +50,5 @@ class PausedViewController: UIViewController {
             handler: nil))
         
         self.presentViewController(alert, animated: true, completion: nil)
-    }
-    
-    func resumeGame(){
-        /*if (InGameViewController == nil){
-            UIViewController InGameViewController = self.storyboard.instantiateViewControllerWithIdentifier("InGameViewController")
-        }*/
-        self.presentViewController(InGameViewController.self(), animated: true, completion: nil)
-        self.loadView()
     }
 }
